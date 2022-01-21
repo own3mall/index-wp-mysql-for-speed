@@ -28,7 +28,7 @@ function ImfsRedactHost( $host ) {
   return "Redacted, not localhost";
 }
 
-function makeNumeric( $ob ): object {
+function makeNumeric( $ob ) {
   $result = [];
   foreach ( $ob as $key => $val ) {
     if ( is_numeric( $val ) ) {
@@ -37,10 +37,10 @@ function makeNumeric( $ob ): object {
     $result[ $key ] = $val;
   }
 
-  return (object) $result;
+  return $result;
 }
 
-function getMySQLVersion(): object {
+function getMySQLVersion() {
   global $wpdb;
   global $wp_db_version;
   $semver  = " 

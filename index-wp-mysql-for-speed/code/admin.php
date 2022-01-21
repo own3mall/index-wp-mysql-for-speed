@@ -237,7 +237,7 @@ class ImfsPage extends Imfs_AdminPageFramework {
    * @callback  action validation_{page slug}_{tab_slug}
    * @noinspection PhpUnusedParameterInspection
    */
-  public function load_imfs_settings_high_performance_keys( object $oAdminPage ) {
+  public function load_imfs_settings_high_performance_keys( $oAdminPage ) {
 
     $optName = $oAdminPage->oProp->sOptionKey;
     $opts    = get_option( $optName );

@@ -202,7 +202,7 @@ END;
    *
    * @return string
    */
-  public function getTable(): ?string {
+  public function getTable(){
     $tables = $this->getAllTables();
 
     return ( isset( $tables[0] ) ) ? $tables[0] : null;

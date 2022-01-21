@@ -161,7 +161,7 @@ END;
     return $unit;
   }
 
-  public function dbStatusSummary(): ?string {
+  public function dbStatusSummary(){
     $l = $this->queryLog;
     $c = $this->classPrefix;
     if ( ! isset ( $l->status ) ) {
@@ -630,7 +630,7 @@ END;
    * @return number
    * @noinspection PhpUnused
    */
-  public function stdev( $a ): ?float {
+  public function stdev( $a ){
     $n = count( $a );
     if ( ! $n ) {
       return null;

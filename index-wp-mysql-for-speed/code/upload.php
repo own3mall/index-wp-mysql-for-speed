@@ -18,7 +18,7 @@ function imfsRandomString( $length ): string {
   return $randomString;
 }
 
-function imfsToObject( $rows ): object {
+function imfsToObject( $rows ){
   $variables = [];
   foreach ( $rows as $row ) {
     $variables[ $row->Variable_name ] = is_numeric( $row->Value ) ? intval( $row->Value ) : $row->Value;
