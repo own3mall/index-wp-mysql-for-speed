@@ -373,7 +373,7 @@ class ImfsPage extends Imfs_AdminPageFramework {
       }
     }
 
-    return $this->db->canReindex;
+    return (bool) $this->db->canReindex;
   }
 
   /** present a list of tables with their indexing status.
