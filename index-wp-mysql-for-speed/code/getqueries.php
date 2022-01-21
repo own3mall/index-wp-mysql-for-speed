@@ -53,8 +53,6 @@ function getMySQLVersion() {
             '' fork, '' distro";
   $results = $wpdb->get_results( IfmsTagQuery( $semver ) );
   $results = $results[0];
-  
-  // die(print_r($results, true));
 
   $results->db_host = imfsRedactHost( DB_HOST );
   $ver              = explode( '-', $results->version, 3 );
